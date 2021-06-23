@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Quiz</string>
+    <string name="splash">splash</string>
+    <string name="insert_user_email">Insert User Name</string>
+    <string name="insert_user_password">Insert User Password</string>
+    <string name="log_in">Log In</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_quiz">Add Quiz</string>
+    <string name="menu_reports">Reports</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_students">StudentsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="theme_1">Theme 1</string>
+    <string name="theme_2">Theme 2</string>
+    <string name="theme_3">Theme 3</string>
+    <string name="back">Back</string>
+    <string name="ministry_of_higher_education">Ministry of Higher Education</string>
+    <string name="syrian_virtual_university">Syrian Virtual University</string>
+    <string name="insert_question">Insert question</string>
+    <string name="save">Save</string>
+    <string name="finish">Finish</string>
+    <string name="edit_quiz">Edit Quiz</string>
+    <string name="no_quiz_started_yet">No Quiz Started Yet</string>
+    <string name="quiz_finished_successfully">Quiz Finished Successfully</string>
+    <string name="your_final_score_is">Your final score is:</string>
+    <string name="no_student_started_quiz_yet">No students started the quiz yet</string>
+    <string name="no_quiz_added_yet">No quiz added yet</string>
+    <string name="delete">Delete</string>
+</resources>

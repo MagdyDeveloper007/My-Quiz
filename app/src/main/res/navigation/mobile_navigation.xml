@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_quiz">
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="developer007.magdy.myquiz.ui.quiz.QuizFragment"
+        android:label="@string/menu_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/nav_edit_quiz"
+        android:name="developer007.magdy.myquiz.ui.edit.EditFragment"
+        android:label="@string/edit_quiz"
+        tools:layout="@layout/fragment_edit_quiz" />
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="developer007.magdy.myquiz.ui.report.ReportFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports" />
+
+</navigation>
