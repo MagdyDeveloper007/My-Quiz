@@ -66,27 +66,23 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
             holder.cbQuizBEdit.setChecked(false);
             holder.cbQuizCEdit.setChecked(false);
             holder.cbQuizDEdit.setChecked(false);
-            newCorrectOpn = 1;
         } else if (correctOpn == 2) {
             holder.cbQuizAEdit.setChecked(false);
             holder.cbQuizBEdit.setChecked(true);
             holder.cbQuizCEdit.setChecked(false);
             holder.cbQuizDEdit.setChecked(false);
-            newCorrectOpn = 2;
 
         } else if (correctOpn == 3) {
             holder.cbQuizAEdit.setChecked(false);
             holder.cbQuizBEdit.setChecked(false);
             holder.cbQuizCEdit.setChecked(true);
             holder.cbQuizDEdit.setChecked(false);
-            newCorrectOpn = 3;
 
         } else if (correctOpn == 4) {
             holder.cbQuizAEdit.setChecked(false);
             holder.cbQuizBEdit.setChecked(false);
             holder.cbQuizCEdit.setChecked(false);
             holder.cbQuizDEdit.setChecked(true);
-            newCorrectOpn = 4;
 
         }
 
@@ -106,6 +102,7 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
                 holder.cbQuizBEdit.setChecked(true);
                 holder.cbQuizCEdit.setChecked(false);
                 holder.cbQuizDEdit.setChecked(false);
+
             }
         });
         holder.cbQuizCEdit.setOnClickListener(new View.OnClickListener() {
@@ -115,6 +112,7 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
                 holder.cbQuizBEdit.setChecked(false);
                 holder.cbQuizCEdit.setChecked(true);
                 holder.cbQuizDEdit.setChecked(false);
+
             }
         });
         holder.cbQuizDEdit.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +122,7 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
                 holder.cbQuizBEdit.setChecked(false);
                 holder.cbQuizCEdit.setChecked(false);
                 holder.cbQuizDEdit.setChecked(true);
+
             }
         });
 
@@ -131,7 +130,22 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
             @Override
             public void onClick(View v) {
                 currentId = list.get(position).getId();
+                if (holder.cbQuizAEdit.isChecked()) {
 
+                    newCorrectOpn = 1;
+                } else if (holder.cbQuizBEdit.isChecked()) {
+
+                    newCorrectOpn = 2;
+
+                } else if (holder.cbQuizCEdit.isChecked()) {
+
+                    newCorrectOpn = 3;
+
+                } else if (holder.cbQuizDEdit.isChecked()) {
+
+                    newCorrectOpn = 4;
+
+                }
                 quizDatabase = QuizDatabase.getInstance(v.getContext());
                 strNewQuiz = holder.etQuizQuestionEdit.getText().toString();
                 strNewOpn1 = holder.etQuizOP1Edit.getText().toString();
@@ -271,4 +285,5 @@ public class EditQuizAdapter extends RecyclerView.Adapter<EditQuizAdapter.EditQu
             linearEditReport = itemView.findViewById(R.id.linearEditReport);
         }
     }
+
 }
